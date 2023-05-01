@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex mt-5 w-full justify-between">
+        <div class="flex space-x-5">
+          <img src="data:image/png;base64,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" class="w20 h-10 pb-2" />
+          <h1 class="">Cookera</h1>
+        </div>
+        <nav>
+          <ul class="flex space-x-5 mr-96">
+            <li>Why us</li>
+            <li>Reviews us</li>
+            <li>pricing</li>
+          </ul>
+        </nav>
+        <div class="text-center">
+          <button
+            class="bg-orange-600 flex justify-center items-center mr-10 text-white w-12 rounded-md hover:underline cursor-pointer"
+          >
+            <span class="text-center">Login</span>
+          </button>
+        </div>
+      </div>
+      <hr class="border-gray-800 opacity-100" />
+  
+      <main>
+        <div class="flex">
+          <!-- left text -->
+          <div class="flex flex-col justify-center pl-32">
+            <div class=""><h1>TRT TODAY</h1></div>
+            <div class="text-2xl font-bold">
+              Fun and Easy Recipes Made for
+              <span class="text-orange-600">You</span>
+            </div>
+            <div class="pt-4">
+              most famous dishes you imagine and most tasty dishes
+            </div>
+  
+            <!-- buttons -->
+            <div class="flex space-x-5 pt-4">
+              <div>
+                <button
+                  class="bg-orange-600 text-white rounded-md w-20 h-8 hover:underline cursor-pointer"
+                >
+                  Explore
+                </button>
+              </div>
+              <div>
+                <button class="font-bold hover:underline cursor-pointer">
+                  Login
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- right img -->
+          <div class="w-full pl-80">
+            <img src="/assets/umi-kitchen-061216 2-05d96657.png" class="h-96 float-right" />
+          </div>
+        </div>
+  
+        <hr class="border-gray-800 text-opacity-100" />
+  
+        <div class="flex space-x-44 pl-20 py-8">
+          <div>&#x2713;1000+<h class="text-orange-600">Recipes</h></div>
+          <div>&#x2713;Easy-to-<h class="text-orange-600">Learn</h></div>
+          <div>&#x2713;Delivered+<h class="text-orange-600">Quickly</h></div>
+          <div>&#x2713;Orgainc<h class="text-orange-600">Ingrediants</h></div>
+        </div>
+        <hr class="border-gray-800 opacity-100" />
+  
+        <div class="flex">
+          <!-- image -->
+          <div class="relative flex pt-16 pl-16">
+            <img src="/assets/Dame_credit_Evan Sung 1-11980021.png" alt="" class="h-60 w-96" />
+            <img
+              src="/assets/TOP 50 2017_Guero_table_overhead 1-3a1eedb7.png"
+              alt=""
+              class="right-52 relative h-40 w-72 top-20"
+            />
+          </div>
+          <!-- text -->
+          <div class="pt-28">
+            <h1 class="">The Food</h1>
+            <h1 class="font-extrabold text-2xl pb-5">WHY US?</h1>
+            <p class="pb-3">The best food in Town get it fresh</p>
+            <ul class="list-disc my-list pb-4">
+              <li class="pb-3">
+                Fresh Ingrediants from
+                <span class="text-orange-600">Local</span> Farms
+              </li>
+              <li>
+                Simpel To make Recipes
+                <span class="text-orange-600">Delivered</span> to you
+              </li>
+            </ul>
+  
+            <button
+              class="bg-orange-600 text-white rounded-md w-20 h-8 hover:underline cursor-pointer"
+            >
+              TRY NOW
+            </button>
+          </div>
+        </div>
+  
+        <div class="relative pt-8">
+          <div class="border-t-2 border-black"></div>
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-3"
+          >
+            <p>Pricing</p>
+          </div>
+          <div class="border-t-2 border-black"></div>
+        </div>
+  
+        <div class="pt-10 mb-48 flex justify-center space-x-36">
+          <!-- 1 -->
+          <div>
+            <div
+              class="bg-orange-400 text-sm border-2 border-orange-100 w-64 h-64 flex flex-col justify-center text-white rounded-t-[50%] pl-12 rounded-md"
+            >
+              <h1 class="font-bold pl-[20%] pb-5">Starter Pack</h1>
+              <h1 class="pb-5">
+                Lorem ipsum dolor, sit amet consectetur adipisicing.
+              </h1>
+              <ul class="list-disc my-list">
+                <li>10 Recipes Monthly</li>
+                <li>5 Starter Guides</li>
+              </ul>
+            </div>
+  <div class="flex justify-center pt-5">
+            <button
+              class="bg-orange-600 text-white rounded-md w-20 h-8 hover:underline cursor-pointer">
+              Try Now
+            </button>
+            </div>
+          </div>
+  
+          <!-- 2 -->
+          <div>
+            <div
+              class="bg-orange-400 text-sm border-2 border-orange-100 w-64 h-64 flex flex-col justify-center text-white rounded-t-[50%] pl-12 rounded-md"
+            >
+              <h1 class="font-bold pl-[20%] pb-5">Loded Pack</h1>
+              <h1 class="pb-5">
+                Lorem ipsum dolor, sit amet consectetur adipisicing.
+              </h1>
+              <ul class="list-disc my-list">
+                <li>20 Recipes Monthly</li>
+                <li>10 Starter Guides</li>
+              </ul>
+            </div>
+            <div class="flex justify-center pt-5">
+            <button
+              class="bg-orange-600 text-white rounded-md w-20 h-8 hover:underline cursor-pointer "
+            >
+              Try Now
+            </button>
+            </div>
+          </div>
+  
+          <!-- 3 -->
+          <div>
+            <div
+              class="bg-orange-400 text-sm border-2 border-orange-100 w-64 h-64 flex flex-col justify-center text-white rounded-t-[50%] pl-12 rounded-md"
+            >
+              <h1 class="font-bold pl-[20%] pb-5">Ultra Pack</h1>
+              <h1 class="pb-5">
+                Lorem ipsum dolor, sit amet consectetur adipisicing.
+              </h1>
+              <ul class="list-disc my-list">
+                <li>50 Recipes Monthly</li>
+                <li>15 Starter Guides</li>
+              </ul>
+            </div>
+            <div class="flex justify-center pt-5">
+            <button
+              class="bg-orange-600 text-white rounded-md w-20 h-8 hover:underline cursor-pointer"
+            >
+              Try Now
+            </button>
+            </div>
+          </div>
+        </div>
+        <hr class="border-gray-800 opacity-100" />
+  
+  
+  <div class="pt-10 flex justify-between pb-10">
+    <div >
+      <div class="flex pl-7 ">
+        <img src="data:image/png;base64,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" alt="" class="w-10 ">
+        <h1 class="relative top-3">COOKERA</h1>
+      </div>
+      <div class="pr-6">
+      <h1 class="text-xs pt-5 pl-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Sequi fugit architecto ducimus dolorem </h1>
+    </div>
+    </div>
+    <div>
+      <h1>@2023 COOKERA.All Rights Reserved</h1>
+    </div>
+    <div class="flex">
+      <img src="/assets/pngtree-instagram-social-platform-icon-png-image_6315976-9d08acc8.png" alt="" class="h-8">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAACCCAMAAAC93eDPAAAAYFBMVEX///8dofIAnfIAmvEUn/Lo9f75/f+43vr0+v6t2frw+f7B4vu13Pq94fuGx/el1fk8q/RmuvXb7/0yp/PV6/yf0vlNsfRYtfVFrvSRzPh1wPbI5fvi8f2Wz/gAlPHO6fxXH8TKAAAEqElEQVR4nO2a27ajIAyGC8RjraJ4qtrx/d9y0B52u0UkFGdu/C5mzV7Lwg+EJAROp4ODg4ODg4ODg/+CX5yTJLmM3n/qv6hqQh+QJiv9f9x/eGlk/0AewKQiChUfxtFOCi4tg1f/TxmsTRYfRuK6iwCvYb/7f4hoPqwijDgjOjtJM0sFCaEqAROUBM+v/CKVf9JU01AIpLdScFPOwEtENfc/VM0kFEihaSmTk2mzmVL1IvwYZhoHaStNdfqM6SzB55NGvIYr0wmY54Gx50JBq9up5dQU8AGpIFo1AyXa5jN2l4mbhwLTP5CztrEcHp+hNLSISQD2dBOFcjli/pJamiuINg3hfQ4u82+8qK2UjQ1vnwbKLxSEAqGAy6H5XpIL1qlbK992Fpj6KMQkQDd4SdoQ6cd5rG6tf2+NdaoAs8CvtR7hA1ETJruffrBmbP2HXdHWxCBKcwXTPDz+XW35U4L0pQaLccP5hFkBrBva7xEByzd3J2IdnjBNtrD0MQA3fd4TC6wEYLrN5vHlDyg/a106WoF+u/uNokGAXGOWPVICiI1kIFXaFrBuNcAnOGukm+GnX3EzMvlaCS4ZSgLkGwImZ7s2r5S2mWoAOAnUYJerV+I+Aiq6pWXiUgWqjk0fFDqHD8BId/l07heUOZpIOOX6UQHI08mt/1mSEqPATEJBNoclk1BRd1k/xKGPdE0mtnA6VSaxV0Y7GfJE2+QdIlswlbC1FO9CpnXB2YJZIuShvb45YHhOGrfNwZrNDCS5i+zXj4ffAWLzhHL90wbTfhv4Thr4ZvpRMekC82r0hnwXBfqj3MyFzaURSni9iwS6HaWeWdNe5qitK9yJl1mTU9iy5rMg3287TlCDU0GGOB7iAbFyhHrH22kzPiTkJlXIXVfCKFSvJo9OYKOJhBPfMUYRs2rwuKOEbcd0J91tKcDAK8zEFudUMwXmBaxhLwmNqQJpDrhkzBTDpO3OeZc4JVCFxFK495IGUfKDeOVu4QuYrvquJOJuRUCDv6WKM0EX1zz2MH3leU1E0jjTAALZuf8sepadIwkUeyXnyfy1aZpWuNqdwNGWkFOgLh2UrtK4guO0AWqLS1u3sYohbjdejA73I6Erdw8bdO5cNIDdHX7sLoMzy1oVFK6Wglq45gcXN0FCfzu8QeREArO9h7/PgwPnaHCe1zI037pIg6LGBv71u7ITiC8M4UmZsy9E2GUJC4YrZ2yqcloocPZqxi+qvBUCVeqdoG4fzcRe32IVIHPmTdD10LWLcVvijccquyvwI2xpHCwD9Bpjg02iAG6OBWA9A6Vu/MFMHFj4aIp+ErRKWKYC8L6Rbl/3G/bfp5xa+GZgtkmS74Wv/5XnqOPUKmMB1toHpjEX8ghVS0c83QdYZm2UZN8E5zCbXtrAFykjQP6tHXqpzeK/BLDa7p3iJ/EVLJNW6kbAhHflFskaJbn2uQmSOKhxd7AAInWQn31SVJyZqQC5cPnZ6BkYXsWtJky7N2Uux6b3DPv0P+N757QWROkjJs8h2jwrDW56vsUrg2vO58vLH4DUXdUPOw5fQViM4zkIkiC49KX3b/s+ODg4ODg4ODiY+QtD1TuA/4zwyQAAAABJRU5ErkJggg==" alt="" class="h-8">
+  
+    </div>
+  </div>
+  
+      </main>
+    
+    
+</body>
+</html>
